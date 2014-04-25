@@ -1,0 +1,125 @@
+<html>
+	<header>
+		<meta charset="utf-8">
+	</header>
+	<body>
+		<div id="result" style="text-align: center; font-size: 2em; margin-top: 3em;">
+			<h2 id="startup-name"></h2>
+
+			<p>
+				<label for="">
+					<input type="checkbox" value="1" id="in-english">
+					Em inglês?
+				</label>
+			</p>
+	
+			<button onclick="generate()">Gerar!</button>
+		</div>
+		<script>
+			var kv = {
+				"keys": [
+					[
+						"delivery",
+						"entrega"
+					],
+					[
+						"food",
+						"comida"
+					],
+					[
+						"lunch",
+						"almoço"
+					],
+					[
+						"dinner",
+						"jantar"
+					],
+					[
+						"taxi",
+						"taxi"
+					],
+					[
+						"video",
+						"video"
+					],
+					[
+						"photo",
+						"foto"
+					],
+					[
+						"design",
+						"design"
+					],
+					[
+						"sales",
+						"vendas"
+					],
+					[
+						"code",
+						"code"
+					]
+				],
+				"values": [
+					[
+						"99",
+						"99"
+					],
+					[
+						"easy",
+						"fácil"
+					],
+					[
+						"now",
+						"agora"
+					],
+					[
+						"free",
+						"livre"
+					],
+					[
+						"smart",
+						"inteligente"
+					],
+					[
+						"mobile",
+						"móvel"
+					],
+					[
+						"healthy",
+						"saudável"
+					],
+					[
+						"healthy",
+						"saudável"
+					]
+				]
+			};
+
+			String.prototype.capitalize = function() {
+			    return this.charAt(0).toUpperCase() + this.slice(1);
+			}
+
+			function getRandomValue(obj, key) {
+				var keys = obj[key],
+					index = document.getElementById("in-english").checked ? 0 : 1;
+
+				return obj[key][Math.floor(Math.random() * obj[key].length)][index];
+			}
+			function generate () {
+				var inEnglish = document.getElementById("in-english").checked,
+					output = "";
+
+				var value = getRandomValue(kv, 'values').capitalize(),
+					key = getRandomValue(kv, 'keys').capitalize();
+
+				if (inEnglish) {
+					output += value + ' ' + key;
+				} else {
+					output += key + ' ' + value;
+				}
+
+				document.getElementById("startup-name").innerHTML = output;
+			}
+		</script>
+	</body>
+</html>
