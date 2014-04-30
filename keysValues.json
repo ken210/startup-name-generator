@@ -31,6 +31,18 @@
 		[
 			"design",
 			"design"
+		],
+		[
+			"product",
+			"produto"
+		],
+		[
+			"thing",
+			"coisa"
+		],
+		[
+			"dish",
+			"rango"
 		]
 	],
 	"values": [
@@ -69,6 +81,10 @@
 		[
 			"awesome",
 			"foda"
+		],
+		[
+			"creative",
+			"criativo"
 		]
 		
 	]
