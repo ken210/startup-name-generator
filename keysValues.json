@@ -43,7 +43,11 @@
 		[
 			"dish",
 			"rango"
-		]
+		],
+        [
+            ".com",
+            ".com"
+        ]
 	],
 	"values": [
 		[
@@ -85,7 +89,10 @@
 		[
 			"creative",
 			"criativo"
-		]
-		
+		],
+        [
+            "urban",
+            "urbano"
+        ],
 	]
 }
