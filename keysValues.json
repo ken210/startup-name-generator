@@ -44,11 +44,11 @@
 			"dish",
 			"rango"
 		],
-        [
-            ".com",
-            ".com"
-        ]
-	],
+        	[
+            		".com",
+            		".com"
+	        ]
+		],
 	"values": [
 		[
 			"99",
@@ -90,9 +90,9 @@
 			"creative",
 			"criativo"
 		],
-        [
-            "urban",
-            "urbano"
-        ],
+	        [
+        		"urban",
+            		"urbano"
+        	],
 	]
 }
